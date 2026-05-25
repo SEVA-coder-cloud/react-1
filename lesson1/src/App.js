@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+// import './App.css';
+// import Cart from './components/Cart';
+// import Link from './components/Link';
+// import time from './components/time';
+// import time from './components/Favoritebook';
+// import time from './components/weatcher'
+// import time from './components/ttt'
+// import time from './components/namenlname'
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Kaneki</h1>
+//       <Cart />
+//       <Link />
+//     </div>
+//   );
+// }
+
+// export default App;
 import './App.css';
+import data from "./painting.json";
+import Gallery from './components/galery/Gallery';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Gallery items={data} />
     </div>
   );
 }
