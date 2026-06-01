@@ -17,15 +17,17 @@
 // }
 
 // export default App;
-import './App.css';
-import data from "./painting.json";
-import Gallery from './components/galery/Gallery';
-
+// import './App.css';
+import { UserList } from './components/users/Userslist';
+// import data from "./painting.json";
+// import Gallery from './components/galery/Container';
+import User from './components/users/User';
+import data from "./components/users/data.json"
 function App() {
   return (
-    <div className="App">
-      <Gallery items={data} />
-    </div>
+  
+      <UserList users = {data}/>
+  
   );
 }
 
